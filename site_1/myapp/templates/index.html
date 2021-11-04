@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+
+
+<body>
+    <h1>Project Name</h1>
+
+    <p>Explain Explain Explain Explain Explain Explain Explain Explain Explain Explain Explain Explain</p>
+    <h2>Algorithms</h2>
+    <ul>
+        <li>k-NN</li>
+        <li>Decision Tree</li>
+        <li>MLP</li>
+        <li>Random forest</li>
+		<li>k Means</li>
+		<li>SVM</li>
+		<li>Autoencoder LSTM</li>
+		<li>...</li>
+    </ul>
+
+<div align = "center">
+	<form method="post">
+		{% csrf_token %}
+		<button  class="button" type="submit" name="run_train">Run Train</button>
+		<button  class="button" type="submit" name="run_test">Run Test</button>
+	</form>
+</div>
+
+
+</body>
+</html>
